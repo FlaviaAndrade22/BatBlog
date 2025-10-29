@@ -1,0 +1,48 @@
+:root{
+  --cor-header:#22c55e;   /* COR DO HEADER */
+  --cor-filtros:#dcfce7;  /* COR DA BARRA DE FILTROS */
+  --cor-grid:#fff;        /* COR DA LISTA DE PRODUTOS */
+  --cor-carrinho:#fef9c3; /* COR DO RESUMO CARRINHO */
+  --txt:#111827; --muted:#64748b; --borda:#e5e7eb;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--txt);background:#f8fafc}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:16px}
+
+/* HEADER */
+header{background:var(--cor-header);color:#fff}
+.top{display:flex;align-items:center;justify-content:space-between}
+.busca{display:flex;gap:8px}
+input[type="search"]{padding:10px;border:none;border-radius:8px;width:220px}
+.cta{background:rgba(255,255,255,.2);padding:10px 12px;border-radius:8px}
+
+/* FILTROS */
+.filtros{background:var(--cor-filtros);border:1px solid var(--borda);border-radius:12px;padding:14px;margin-top:12px}
+.filtros form{display:flex;gap:10px;flex-wrap:wrap}
+select, .chip{
+  padding:8px 10px;border:1px solid var(--borda);border-radius:8px;background:#fff
+}
+.chip{display:inline-block}
+
+/* GRID + LATERAL */
+.grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
+@media(min-width:1000px){.grid{grid-template-columns:3fr 1fr}}
+
+.produtos{background:var(--cor-grid);border:1px solid var(--borda);border-radius:12px;padding:14px}
+.grade{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:700px){.grade{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1100px){.grade{grid-template-columns:repeat(4,1fr)}}
+
+.card{border:1px solid var(--borda);border-radius:12px;overflow:hidden;background:#fff}
+.img{background:#e2e8f0;aspect-ratio:1/1} /* Simula imagem quadrada */
+.info{padding:12px}
+.preco{font-weight:bold}
+.muted{color:var(--muted)}
+
+.carrinho{background:var(--cor-carrinho);border:1px solid var(--borda);border-radius:12px;padding:14px;height:fit-content}
+.total{display:flex;justify-content:space-between;margin-top:8px;font-weight:bold}
+
+/* FOOTER */
+footer{margin-top:18px;background:#111827;color:#e5e7eb}
+footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;padding:12px 16px}

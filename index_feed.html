@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rede Social — Feed</title>
+<link rel="stylesheet" href="feed.css">
+</head>
+<body>
+  <header>
+    <div class="container top">
+      <strong>Minha Rede</strong>
+      <div class="search"><input type="text" placeholder="Buscar..." /></div>
+      <nav>
+        <a href="#">Perfil</a> • <a href="#">Mensagens</a> • <a href="#">Sair</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container grid">
+    <main>
+      <section class="stories">
+        <div class="story">
+          <div class="avatar"></div>
+          <small>@Mulher_Gata</small>
+        </div>
+        <div class="story">
+          <div class="avatar"></div>
+          <small>@Frash</small>
+        </div>
+        <div class="story">
+          <div class="avatar"></div>
+          <small>@Robinho</small>
+        </div>
+        <div class="story">
+          <div class="avatar"></div>
+          <small>@Alfredão</small>
+        </div>
+      </section>
+
+      <section class="compose" style="margin-top:12px">
+        <strong>Criar publicação</strong>
+        <textarea placeholder="O que você está pensando?"></textarea>
+      </section>
+
+      <article class="post" style="margin-top:12px">
+        <div class="head">
+          <div class="avatar"></div>
+          <div>
+            <strong>Nyra</strong>
+            <div class="muted">há 3 min</div>
+          </div>
+        </div>
+        <div class="content">
+          <p>Primeiro post do feed. Troque o texto, brinque com cores e fontes.</p>
+        </div>
+      </article>
+
+      <article class="post" style="margin-top:12px">
+        <div class="head">
+          <div class="avatar"></div>
+          <div>
+            <strong>Will</strong>
+            <div class="muted">há 1 h</div>
+          </div>
+        </div>
+        <div class="content">
+          <p>Exemplo de segundo post com mais conteúdo e talvez uma imagem (div simulando imagem abaixo).</p>
+          <div style="background:#e2e8f0;height:220px;border-radius:10px;margin-top:8px"></div>
+        </div>
+      </article>
+    </main>
+
+    <aside>
+      <h3>Sugestões</h3>
+      <div class="card">
+        <strong>@Bruce_Wayne</strong>
+        <div class="muted">Sugestão para seguir</div>
+      </div>
+      <div class="card">
+        <strong>Assuntos do momento</strong>
+        <ul>
+          <li>#SuperMan</li><li>#PinguimPresidente</li><li>#GotaMata</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

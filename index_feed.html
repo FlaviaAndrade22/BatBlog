@@ -10,7 +10,9 @@
   <header>
     <div class="container top">
       <strong>Minha Rede</strong>
-      <div class="search"><input type="text" placeholder="Buscar..." /></div>
+        <div class="search">
+          <input type="text" id="inputBusca" placeholder="Buscar..." />
+        </div>
         <nav>
           <a href="mailto:flaviaandrader2011@gmail.com">Mensagens</a> • <a href="index_blog.html">Batblog</a>
         </nav>
@@ -40,7 +42,9 @@
 
       <section class="compose" style="margin-top:12px">
         <strong>Criar publicação</strong>
-        <textarea placeholder="O que você está pensando?"></textarea>
+        <textarea id="textoPost" placeholder="O que você está pensando?"></textarea>
+        <button id="btnPostar" style="margin-top:5px; background:var(--cor-header); color:white; border:none; padding:5px 10px; border-radius:4px; cursor:pointer;">
+        Publicar</button>
       </section>
 
       <article class="post" style="margin-top:12px">
@@ -54,6 +58,10 @@
         <div class="content">
           <p>Pinguim para presidente!!</p>
         </div>
+          <div class="content">
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 10px 0;">
+            <button class="btn-like" style="border:none; background:transparent; cursor:pointer; color:#666;">🤍 Curtir </button>
+          </div>
       </article>
 
       <article class="post" style="margin-top:12px">
@@ -67,7 +75,10 @@
         <div class="content">
           <p>soy vida loka!</p>
           <img src="img/piadamortal.png" style="width:100%; height:auto; border-radius:10px; margin-top:8px;" alt="Post do Curinga">
-        </div>
+          <div class="content">
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 10px 0;">
+            <button class="btn-like" style="border:none; background:transparent; cursor:pointer; color:#666;">🤍 Curtir </button>
+          </div>
       </article>
     </main>
 
@@ -88,5 +99,6 @@
       </div>
     </aside>
   </div>
+  <script src="feedscript.js"></script>
 </body>
 </html>
